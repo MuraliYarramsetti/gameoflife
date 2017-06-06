@@ -10,6 +10,6 @@ node {
     
     stage ('Maven Build') {    
       def mvnHome = tool 'Maven350'
-      sh "${mvnHome}/bin/mvn clean install -DskipTests=true"
+      bat "mvn clean install -DskipTests=true"
     } 
 }
